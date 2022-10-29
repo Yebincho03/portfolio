@@ -1,6 +1,8 @@
 import Head from "next/head";
 import Image from "next/image";
 import styles from "../styles/Home.module.css";
+import githubLogo from "../public/github-logo.svg";
+import linkedIn from "../public/linkedin-logo.svg";
 
 export default function Home() {
   return (
@@ -12,9 +14,28 @@ export default function Home() {
           <link rel="icon" href="/favicon.ico" />
         </Head>
       </div>
-      <main className={styles.main}>
-        <div>YC</div>
-      </main>
+      <div className={styles.header}>
+        <nav className={styles.headerNav}>
+          <div className={styles.logoGroup}>
+            <div className={styles.logo}>YC</div>
+            <div className={styles.logoDot}>.</div>
+          </div>
+          <div className={styles.navContact}>
+            <div>Contact me</div>
+            <a href="https://github.com/Yebincho03">
+              <Image src={githubLogo} alt="githubLogo" />
+            </a>
+            <a href="https://www.linkedin.com/in/yebincho">
+              <Image src={linkedIn} alt="linkedInLogo" />
+            </a>
+          </div>
+        </nav>
+      </div>
+      <body className={styles.body}>
+        <div className={styles.home}>
+          <span>HI THERE 👋</span>
+        </div>
+      </body>
     </>
   );
 }
