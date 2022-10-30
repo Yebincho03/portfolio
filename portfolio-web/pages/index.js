@@ -34,6 +34,8 @@ export default function Home() {
       <div className={styles.body}>
         <div className={styles.home}>
           <div>HI THERE 👋</div>
+          <div className={styles.title}>I'm Yebin</div>
+          <div className={styles.title}>Front-end developer</div>
         </div>
       </div>
     </div>

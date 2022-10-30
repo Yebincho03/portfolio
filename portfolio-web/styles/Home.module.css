@@ -52,6 +52,10 @@
   font-weight: 700;
   font-size: 50px;
 }
+.home {
+  display: flex;
+  flex-direction: column;
+}
 
 .footer {
   display: flex;
@@ -81,9 +85,9 @@
 }
 
 .title {
-  margin: 0;
+  font-weight: 600;
   line-height: 1.15;
-  font-size: 4rem;
+  font-size: 70px;
 }
 
 .title,
