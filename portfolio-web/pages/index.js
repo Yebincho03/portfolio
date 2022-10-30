@@ -6,7 +6,7 @@ import linkedIn from "../public/linkedin-logo.svg";
 
 export default function Home() {
   return (
-    <>
+    <div>
       <div className={styles.container}>
         <Head>
           <title>Yebin's Portfolio</title>
@@ -15,7 +15,7 @@ export default function Home() {
         </Head>
       </div>
       <div className={styles.header}>
-        <nav className={styles.headerNav}>
+        <div className={styles.headerNav}>
           <div className={styles.logoGroup}>
             <div className={styles.logo}>YC</div>
             <div className={styles.logoDot}>.</div>
@@ -29,13 +29,13 @@ export default function Home() {
               <Image src={linkedIn} alt="linkedInLogo" />
             </a>
           </div>
-        </nav>
-      </div>
-      <body className={styles.body}>
-        <div className={styles.home}>
-          <span>HI THERE 👋</span>
         </div>
-      </body>
-    </>
+      </div>
+      <div className={styles.body}>
+        <div className={styles.home}>
+          <div>HI THERE 👋</div>
+        </div>
+      </div>
+    </div>
   );
 }
