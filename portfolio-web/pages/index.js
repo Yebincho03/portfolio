@@ -1,13 +1,14 @@
 import Head from "next/head";
 import Image from "next/image";
 import Header from "../components/Header";
+import styled from "styled-components";
 import styles from "../styles/Home.module.css";
 import githubLogo from "../public/github-logo.svg";
 import linkedIn from "../public/linkedin-logo.svg";
 
 export default function Home() {
   return (
-    <div>
+    <Contanier>
       <div className={styles.container}>
         <Head>
           <title>Yebin's Portfolio</title>
@@ -15,13 +16,12 @@ export default function Home() {
           <link rel="icon" href="/favicon.ico" />
         </Head>
       </div>
-      <div className={styles.body}>
-        <div className={styles.home}>
-          <div>HI THERE 👋</div>
-          <div className={styles.title}>I'm Yebin</div>
-          <div className={styles.title}>Front-end developer</div>
-        </div>
-      </div>
-    </div>
+      <Header />
+    </Contanier>
   );
 }
+
+const Contanier = styled.div`
+  margin: 0;
+  padding: 0;
+`;
