@@ -1,10 +1,9 @@
 import Head from "next/head";
 import Image from "next/image";
 import Header from "../components/Header";
+import Hero from "../components/Hero";
 import styled from "styled-components";
 import styles from "../styles/Home.module.css";
-import githubLogo from "../public/github-logo.svg";
-import linkedIn from "../public/linkedin-logo.svg";
 
 export default function Home() {
   return (
@@ -17,6 +16,7 @@ export default function Home() {
         </Head>
       </div>
       <Header />
+      <Hero />
     </Contanier>
   );
 }
