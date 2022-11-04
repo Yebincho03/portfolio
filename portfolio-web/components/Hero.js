@@ -15,6 +15,13 @@ const Hero = () => {
           Vancouver.
         </div>
       </TextWrapper>
+      <ButtonWrapper>
+        <a href="#about">
+          <button className="button">
+            <h3>HIRE ME</h3>
+          </button>
+        </a>
+      </ButtonWrapper>
     </HeroWrapper>
   );
 };
@@ -28,6 +35,16 @@ const HeroWrapper = styled.div`
 const TextWrapper = styled.div`
   display: flex;
   flex-direction: row;
+`;
+const ButtonWrapper = styled.div`
+  display: flex;
+  flex-direction: row;
+  .button {
+    border: 1px solid white;
+    width: 200px;
+    border-radius: 10px;
+    backgrond-color: none;
+  }
 `;
 
 export default Hero;
