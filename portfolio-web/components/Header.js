@@ -14,7 +14,7 @@ const Header = () => {
     <>
       <HeaderContainer>
         <TextContainer>
-          <Image width={74} height={76} src={Logo} alt={"Logo"} />
+          <Image width={74} height={76} src={Logo} alt="Logo" />
           <MenuItems>
             <Menu>
               <div className="contactMe">CONTACT ME</div>
