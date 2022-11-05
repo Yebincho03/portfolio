@@ -22,8 +22,12 @@ const Hero = () => {
             </button>
           </ButtonWrapper>
         </TextWrapper>
-        <div className="img">
-          <Image fill src={HeroImg} alt="HeroImage" />
+        <div className="imgWrapper">
+          <div className="blueBox"></div>
+          <div className="greenBox"></div>
+          <div className="img">
+            <Image fill src={HeroImg} alt="HeroImage" />
+          </div>
         </div>
       </div>
     </HeroWrapper>
@@ -36,16 +40,48 @@ const HeroWrapper = styled.div`
   justify-content: center;
   align-self: center;
   padding: 24px;
+
   .hero {
     width: 100%;
     max-width: 900px;
     display: flex;
     flex-direction: row;
-    .img {
-      width: 50%;
-      height: 50%;
+    .imgWrapper {
+      position: relative;
+      .img {
+        width: 70%;
+        height: auto;
+        object-fit: contain;
+        z-index: 3;
+        padding-top: 50px;
 
-      object-fit: contain;
+        @media screen and (min-width: 800px) {
+          height: 80%;
+          width: 33.6vw;
+        }
+      }
+      .greenBox {
+        width: 140px;
+        height: 140px;
+        background-color: #74fac0;
+        opacity: 30%;
+        border-radius: 50px;
+        position: absolute;
+        z-index: -1;
+        top: 30px;
+        right: 0;
+      }
+      .blueBox {
+        width: 40px;
+        height: 40px;
+        background-color: #4f60f6;
+        opacity: 40%;
+        border-radius: 40px;
+        position: absolute;
+        z-index: -1;
+        top: 0;
+        right: 150px;
+      }
     }
   }
 `;
