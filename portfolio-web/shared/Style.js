@@ -15,7 +15,7 @@ export const SectionTitle = styled.h3`
 `;
 
 export const HeadLine = styled.h1`
-  font-size: 40px;
+  font-size: 45px;
   font-weight: 600;
   color: ${globalColor.grey0};
   margin: 0;

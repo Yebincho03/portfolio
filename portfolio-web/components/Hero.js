@@ -23,9 +23,9 @@ const Hero = () => {
         </ButtonWrapper>
       </div>
       <div className="imgWrapper">
-        <div className="blueBox"></div>
-        <div className="greenBox"></div>
         <div className="img">
+          <div className="blueBox"></div>
+          <div className="greenBox"></div>
           <Image className="heroImg" src={HeroImg} alt="HeroImage" />
         </div>
       </div>
@@ -48,9 +48,14 @@ const HeroWrapper = styled.div`
 
   .textWrapper {
     margin-top: 5vh;
-    width: 70vw;
+    width: 100%;
     display: flex;
     flex-direction: column;
+
+    @media screen and (min-width: 800px) {
+      width: 70vw;
+      height: auto;
+    }
 
     .helloText {
       font-style: normal;
@@ -68,16 +73,17 @@ const HeroWrapper = styled.div`
   }
 
   .imgWrapper {
-    position: relative;
-    width: 30vw;
+    display: flex;
+    justify-content: center;
+    width: 100%;
 
     .img {
-      display: flex;
-      justify-content: center;
+      margin-top: 4vh;
+      position: relative;
 
       @media screen and (min-width: 800px) {
         height: 100%;
-        width: 23.6vw;
+        width: 300px;
       }
 
       .heroImg {
@@ -87,34 +93,29 @@ const HeroWrapper = styled.div`
         object-fit: contain;
       }
 
-      @media screen and (min-width: 800px) {
-        height: 80%;
-        width: 33.6vw;
+      .greenBox {
+        width: 100px;
+        height: 100px;
+        background-color: ${globalColor.primary};
+        opacity: 30%;
+        border-radius: 40px;
+        position: absolute;
+        z-index: 1;
+        top: -1vh;
+        right: -1vw;
       }
-    }
 
-    .greenBox {
-      width: 140px;
-      height: 140px;
-      background-color: ${globalColor.primary};
-      opacity: 30%;
-      border-radius: 50px;
-      position: absolute;
-      z-index: 1;
-      top: 30px;
-      right: 0;
-    }
-
-    .blueBox {
-      width: 40px;
-      height: 40px;
-      background-color: ${globalColor.secondary};
-      opacity: 40%;
-      border-radius: 40px;
-      position: absolute;
-      z-index: 1;
-      top: 0;
-      right: 150px;
+      .blueBox {
+        width: 30px;
+        height: 30px;
+        background-color: ${globalColor.secondary};
+        opacity: 40%;
+        border-radius: 40px;
+        position: absolute;
+        z-index: 1;
+        top: -7vh;
+        right: 7vw;
+      }
     }
   }
 `;
