@@ -12,7 +12,7 @@ const Hero = () => {
         <HeadLine>I'm Yebin,</HeadLine>
         <HeadLine>Front-end developer</HeadLine>
         <h4>DESIGNER + DEVELOPER</h4>
-        <DescriptiveText>
+        <DescriptiveText className="descriptiveText">
           I’m a junior frontend developer with graphic design skills based in
           Vancouver.
         </DescriptiveText>
@@ -35,7 +35,7 @@ const Hero = () => {
 
 const HeroWrapper = styled.div`
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   max-width: 900px;
   justify-content: center;
   align-self: center;
@@ -44,6 +44,7 @@ const HeroWrapper = styled.div`
   @media screen and (min-width: 800px) {
     gap: 2vw;
     margin-top: 8vh;
+    flex-direction: row;
   }
 
   .textWrapper {
@@ -53,7 +54,7 @@ const HeroWrapper = styled.div`
     flex-direction: column;
 
     @media screen and (min-width: 800px) {
-      width: 70vw;
+      width: 50vw;
       height: auto;
     }
 
@@ -68,7 +69,14 @@ const HeroWrapper = styled.div`
       font-style: normal;
       font-weight: 600;
       font-size: 20px;
+      line-height: 50px;
       color: ${globalColor.primary};
+      margin: 0;
+    }
+
+    .descriptiveText {
+      width: 80%;
+      margin-bottom: 40px;
     }
   }
 
@@ -76,6 +84,11 @@ const HeroWrapper = styled.div`
     display: flex;
     justify-content: center;
     width: 100%;
+
+    @media screen and (min-width: 800px) {
+      height: 100%;
+      width: 35vw;
+    }
 
     .img {
       margin-top: 4vh;
