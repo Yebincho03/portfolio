@@ -14,7 +14,7 @@ const Header = () => {
     <>
       <HeaderContainer>
         <TextContainer>
-          <Image width={74} height={76} src={Logo} alt="Logo" />
+          <Image width={54} height={56} src={Logo} alt="Logo" />
           <MenuItems>
             <Menu>
               <div className="contactMe">CONTACT ME</div>
@@ -49,6 +49,7 @@ const HeaderContainer = styled.div`
   flex-direction: row;
   top: 0;
   left: 0;
+  margin-top: 2vh;
   align-items: center;
 `;
 
@@ -69,7 +70,7 @@ const Menu = styled.div`
     line-height: 40px;
     margin: 0 10px;
     font-size: 20px;
-    font-weight: 700;
+    font-weight: 500;
   }
 `;
 const MenuItems = styled.div`

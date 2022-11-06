@@ -3,6 +3,9 @@ body {
   padding: 0;
   margin: 0;
   font-family: "Outfit", sans-serif;
+  min-width: 100vw;
+  background: #212121;
+  color: white;
 }
 
 a {

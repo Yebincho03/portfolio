@@ -1,33 +1,32 @@
 import React from "react";
 import Image from "next/image";
 import styled from "styled-components";
+import { globalColor, HeadLine, DescriptiveText } from "../shared/Style";
 import HeroImg from "../public/myPic.png";
 
 const Hero = () => {
   return (
     <HeroWrapper>
-      <div className="hero">
-        <TextWrapper>
-          <h1>HI THERE👋</h1>
-          <h1>I'm Yebin Cho</h1>
-          <h1>Front-end developer</h1>
-          <h3>Designer + Developer</h3>
-          <h5>
-            I’m a junior frontend developer with graphic design skills based in
-            Vancouver.
-          </h5>
-          <ButtonWrapper>
-            <button className="btn">
-              <h3>HIRE ME</h3>
-            </button>
-          </ButtonWrapper>
-        </TextWrapper>
-        <div className="imgWrapper">
-          <div className="blueBox"></div>
-          <div className="greenBox"></div>
-          <div className="img">
-            <Image fill src={HeroImg} alt="HeroImage" />
-          </div>
+      <div className="textWrapper">
+        <div className="helloText">HI THERE👋</div>
+        <HeadLine>I'm Yebin,</HeadLine>
+        <HeadLine>Front-end developer</HeadLine>
+        <h4>DESIGNER + DEVELOPER</h4>
+        <DescriptiveText>
+          I’m a junior frontend developer with graphic design skills based in
+          Vancouver.
+        </DescriptiveText>
+        <ButtonWrapper>
+          <button className="btn">
+            <h3>HIRE ME</h3>
+          </button>
+        </ButtonWrapper>
+      </div>
+      <div className="imgWrapper">
+        <div className="blueBox"></div>
+        <div className="greenBox"></div>
+        <div className="img">
+          <Image className="heroImg" src={HeroImg} alt="HeroImage" />
         </div>
       </div>
     </HeroWrapper>
@@ -37,61 +36,89 @@ const Hero = () => {
 const HeroWrapper = styled.div`
   display: flex;
   flex-direction: row;
+  max-width: 900px;
   justify-content: center;
   align-self: center;
-  padding: 24px;
+  margin-top: 4vh;
 
-  .hero {
-    width: 100%;
-    max-width: 900px;
+  @media screen and (min-width: 800px) {
+    gap: 2vw;
+    margin-top: 8vh;
+  }
+
+  .textWrapper {
+    margin-top: 5vh;
+    width: 70vw;
     display: flex;
-    flex-direction: row;
-    .imgWrapper {
-      position: relative;
-      .img {
-        width: 70%;
-        height: auto;
-        object-fit: contain;
-        z-index: 3;
-        padding-top: 50px;
+    flex-direction: column;
 
-        @media screen and (min-width: 800px) {
-          height: 80%;
-          width: 33.6vw;
-        }
+    .helloText {
+      font-style: normal;
+      font-weight: 300;
+      font-size: 24px;
+      line-height: 40px;
+    }
+
+    h4 {
+      font-style: normal;
+      font-weight: 600;
+      font-size: 20px;
+      color: ${globalColor.primary};
+    }
+  }
+
+  .imgWrapper {
+    position: relative;
+    width: 30vw;
+
+    .img {
+      display: flex;
+      justify-content: center;
+
+      @media screen and (min-width: 800px) {
+        height: 100%;
+        width: 23.6vw;
       }
-      .greenBox {
-        width: 140px;
-        height: 140px;
-        background-color: #74fac0;
-        opacity: 30%;
-        border-radius: 50px;
-        position: absolute;
-        z-index: -1;
-        top: 30px;
-        right: 0;
+
+      .heroImg {
+        width: 100%;
+        height: auto;
+        z-index: 3;
+        object-fit: contain;
       }
-      .blueBox {
-        width: 40px;
-        height: 40px;
-        background-color: #4f60f6;
-        opacity: 40%;
-        border-radius: 40px;
-        position: absolute;
-        z-index: -1;
-        top: 0;
-        right: 150px;
+
+      @media screen and (min-width: 800px) {
+        height: 80%;
+        width: 33.6vw;
       }
+    }
+
+    .greenBox {
+      width: 140px;
+      height: 140px;
+      background-color: ${globalColor.primary};
+      opacity: 30%;
+      border-radius: 50px;
+      position: absolute;
+      z-index: 1;
+      top: 30px;
+      right: 0;
+    }
+
+    .blueBox {
+      width: 40px;
+      height: 40px;
+      background-color: ${globalColor.secondary};
+      opacity: 40%;
+      border-radius: 40px;
+      position: absolute;
+      z-index: 1;
+      top: 0;
+      right: 150px;
     }
   }
 `;
-const TextWrapper = styled.div`
-  display: flex;
-  flex-direction: column;
-  align-self: center;
-  justify-content: center;
-  width: 100%;
-`;
+
 const ButtonWrapper = styled.div`
   display: flex;
   flex-direction: row;
