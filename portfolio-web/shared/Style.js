@@ -9,13 +9,13 @@ export const globalColor = {
 
 export const SectionTitle = styled.h3`
   color: ${globalColor.grey0};
-  font-size: 30px;
+  font-size: 40px;
   font-weight: 600;
   margin: 0;
 `;
 
 export const HeadLine = styled.h1`
-  font-size: 45px;
+  font-size: 50px;
   font-weight: 600;
   color: ${globalColor.grey0};
   margin: 0;

@@ -3,6 +3,7 @@ import Image from "next/image";
 import Header from "../components/Header";
 import Hero from "../components/Hero";
 import styled from "styled-components";
+import About from "../components/About";
 import styles from "../styles/Home.module.css";
 import { globalColor } from "../shared/Style";
 
@@ -18,6 +19,7 @@ export default function Home() {
       <Wrapper>
         <Header />
         <Hero />
+        <About />
       </Wrapper>
     </Contanier>
   );
@@ -32,6 +34,8 @@ const Wrapper = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
+  margin: 0 auto;
+  padding: 0;
   background-color: ${globalColor.grey100};
   color: ${globalColor.grey0};
 `;

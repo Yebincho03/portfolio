@@ -11,33 +11,26 @@ const Header = () => {
   const [showMenu, setShowMenu] = useState(false);
 
   return (
-    <>
-      <HeaderContainer>
-        <TextContainer>
-          <Image width={54} height={56} src={Logo} alt="Logo" />
-          <MenuItems>
-            <Menu>
-              <div className="contactMe">CONTACT ME</div>
-            </Menu>
-            <Menu>
-              <a href="https://github.com/Yebincho03">
-                <Image width={40} height={40} src={Github} alt="githubLogo" />
-              </a>
-            </Menu>
-            <Menu>
-              <a href="https://www.linkedin.com/in/yebincho">
-                <Image
-                  width={40}
-                  height={40}
-                  src={Linkedin}
-                  alt="linkedInLogo"
-                />
-              </a>
-            </Menu>
-          </MenuItems>
-        </TextContainer>
-      </HeaderContainer>
-    </>
+    <HeaderContainer>
+      <TextContainer>
+        <Image width={54} height={56} src={Logo} alt="Logo" />
+        <MenuItems>
+          <Menu>
+            <div className="contactMe">CONTACT ME</div>
+          </Menu>
+          <Menu>
+            <a href="https://github.com/Yebincho03">
+              <Image width={40} height={40} src={Github} alt="githubLogo" />
+            </a>
+          </Menu>
+          <Menu>
+            <a href="https://www.linkedin.com/in/yebincho">
+              <Image width={40} height={40} src={Linkedin} alt="linkedInLogo" />
+            </a>
+          </Menu>
+        </MenuItems>
+      </TextContainer>
+    </HeaderContainer>
   );
 };
 
