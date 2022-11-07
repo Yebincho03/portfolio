@@ -40,10 +40,11 @@ const HeroWrapper = styled.div`
   justify-content: center;
   align-self: center;
   margin-top: 4vh;
+  padding: 2em;
 
   @media screen and (min-width: 800px) {
     gap: 2vw;
-    margin-top: 8vh;
+    margin-top: 13vh;
     flex-direction: row;
   }
 

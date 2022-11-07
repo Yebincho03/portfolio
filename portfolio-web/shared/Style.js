@@ -9,16 +9,25 @@ export const globalColor = {
 
 export const SectionTitle = styled.h3`
   color: ${globalColor.grey0};
-  font-size: 40px;
+  font-size: 30px;
   font-weight: 600;
   margin: 0;
+  @media screen and (min-width: 800px) {
+    font-size: 40px;
+  }
 `;
 
 export const HeadLine = styled.h1`
-  font-size: 50px;
+  font-size: 35px;
   font-weight: 600;
   color: ${globalColor.grey0};
   margin: 0;
+  @media screen and (min-width: 800px) {
+    font-size: 50px;
+    font-weight: 600;
+    color: ${globalColor.grey0};
+    margin: 0;
+  }
 `;
 
 export const DescriptiveText = styled.p`

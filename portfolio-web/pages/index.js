@@ -34,7 +34,7 @@ const Wrapper = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin: 0 auto;
+  margin: 0;
   padding: 0;
   background-color: ${globalColor.grey100};
   color: ${globalColor.grey0};

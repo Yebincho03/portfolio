@@ -3,10 +3,14 @@ import Image from "next/image";
 import styled from "styled-components";
 import Icon from "../public/sticker.png";
 import { globalColor, SectionTitle, DescriptiveText } from "../shared/Style";
+import Arrow from "../public/arrow.svg";
 
 const About = () => {
   return (
     <Container>
+      <div className="arrow">
+        <Image src={Arrow} />
+      </div>
       <div className="blackBox">
         <div className="imgWrapper">
           <Image className="icon" src={Icon} alt="icon" />
@@ -33,14 +37,20 @@ const Container = styled.div`
   max-width: 900px;
   justify-content: center;
   align-self: center;
-  margin-top: 30vh;
+  margin: 20vh 0;
+
+  .arrow {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20vh;
+  }
 
   .blackBox {
     display: flex;
     flex-direction: column;
     justify-content: center;
     background-color: #000000;
-    width: 100%;
+    width: 85vw;
     border-radius: 20px;
     padding: 5vh 5vw;
 
@@ -59,11 +69,15 @@ const Container = styled.div`
     }
 
     .textWrapper {
-      width: 50vw;
+      width: 100%;
       flex-direction: column;
       display: flex;
       justify-content: center;
       align-self: center;
+
+      @media screen and (min-width: 800px) {
+        width: 45vw;
+      }
 
       .sectionTitle {
         line-height: 80px;
