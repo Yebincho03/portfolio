@@ -76,7 +76,6 @@ const HeroWrapper = styled.div`
 
     .descriptiveText {
       width: 80%;
-      margin-bottom: 40px;
     }
   }
 
@@ -126,8 +125,14 @@ const HeroWrapper = styled.div`
         border-radius: 40px;
         position: absolute;
         z-index: 1;
-        top: -7vh;
-        right: 7vw;
+        top: -5vh;
+        right: 20vw;
+
+        @media screen and (min-width: 800px) {
+          position: absolute;
+          top: -5vh;
+          right: 5vw;
+        }
       }
     }
   }
@@ -136,10 +141,16 @@ const HeroWrapper = styled.div`
 const ButtonWrapper = styled.div`
   display: flex;
   flex-direction: row;
+  margin: 20px 0;
   .btn {
-    width: 200px;
+    width: 180px;
     border-radius: 10px;
-    backgrond-color: none;
+    background-color: transparent;
+    border: 2px solid ${globalColor.primary};
+    color: ${globalColor.primary};
+    font-size: 15px;
+    line-height: 10px;
+    margin: 0;
   }
 `;
 

@@ -25,7 +25,7 @@ export const DescriptiveText = styled.p`
   font-style: normal;
   font-weight: 200;
   font-size: 14px;
-  line-height: 16px;
+  line-height: 18px;
   color: ${globalColor.grey0};
   margin: 0;
 `;
