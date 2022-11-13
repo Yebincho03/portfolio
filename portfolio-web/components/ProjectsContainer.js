@@ -1,26 +1,32 @@
 import Project from "./Project";
 import styled from "styled-components";
+import courteLogo from "../public/logo/courte-logo.svg";
+import courteImg from "../public/images/courte-image.png";
+import picbeakLogo from "../public/logo/picbeak-logo.svg";
+import picbeakImg from "../public/images/picbeak-image.png";
+import {
+  globalColor,
+  SectionTitle,
+  DescriptiveText,
+  HeadLine,
+} from "../shared/Style";
 
 const ProjectsContainer = () => {
   return (
     <Container id="projects">
+      <SectionTitle className="sectionTitle">Projects</SectionTitle>
       <Project
-        featureTitle="Explore"
-        featureHeadline="Find tennis courts and check their availability"
-        featureDescription="Save time by planning to visit parks with the shortest wait time and have easy access to all available court options in your community."
-        featureImg="/images/image-explore.png"
+        featureLogo={courteLogo}
+        featureHeadline="Discover a better way to play tennis"
+        featureDescription="A mobile application that facilitates the use and sharing of tennis courts."
+        featureImg={courteImg}
       />
       <Project
-        featureTitle="Play"
-        featureHeadline="Join or queue at a court and track your play time"
-        featureDescription="Simplify the use and sharing of courts by organizing players in a queue system—and don't lose sight of your place in line with notifications!"
-        featureImg="/images/image-play.png"
-      />
-      <Project
-        featureTitle="Match"
-        featureHeadline="Set your preferences and pair up with a player"
-        featureDescription="Cut down on communication and find other users' looking for someone to play with based on your preferences."
-        featureImg="/images/image-match.png"
+        featureLogo={picbeakLogo}
+        featureHeadline="Explore birds and 
+        spot them in the wild"
+        featureDescription="Web app that provides educational information about bird species."
+        featureImg={picbeakImg}
       />
     </Container>
   );
@@ -34,6 +40,11 @@ const Container = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
+
+  .sectionTitle {
+    margin-bottom: 2vh;
+    text-align: left;
+  }
 `;
 
 export default ProjectsContainer;

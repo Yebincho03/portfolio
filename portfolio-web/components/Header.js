@@ -1,9 +1,9 @@
 import { react, useState } from "react";
 import Image from "next/image";
 import styled from "styled-components";
-import Logo from "../public/YC.logo.svg";
-import Github from "../public/github.svg";
-import Linkedin from "../public/linkedin-logo.svg";
+import Logo from "../public/logo/YC.logo.svg";
+import Github from "../public/logo/github.svg";
+import Linkedin from "../public/logo/linkedin-logo.svg";
 import hamburger from "../public/hamburger-menu.svg";
 import Link from "next/link";
 

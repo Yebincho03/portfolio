@@ -2,7 +2,7 @@ import React from "react";
 import Image from "next/image";
 import styled from "styled-components";
 import { globalColor, HeadLine, DescriptiveText } from "../shared/Style";
-import HeroImg from "../public/myPic.png";
+import HeroImg from "../public/images/myPic.png";
 
 const Hero = () => {
   return (
