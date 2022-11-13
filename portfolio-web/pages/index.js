@@ -5,9 +5,11 @@ import Project from "../components/Project";
 import Hero from "../components/Hero";
 import styled from "styled-components";
 import About from "../components/About";
+
 import styles from "../styles/Home.module.css";
 import { globalColor } from "../shared/Style";
 import ProjectsContainer from "../components/ProjectsContainer";
+import Skill from "../components/Skill";
 
 export default function Home() {
   return (
@@ -23,6 +25,7 @@ export default function Home() {
         <Hero />
         <About />
         <ProjectsContainer />
+        <Skill />
       </Wrapper>
     </Contanier>
   );
