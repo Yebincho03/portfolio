@@ -14,26 +14,28 @@ import {
 const ProjectsContainer = () => {
   return (
     <Container id="projects">
-      <SectionTitle className="sectionTitle">Projects</SectionTitle>
-      <Project
-        featureLogo={courteLogo}
-        featureHeadline="Discover a better way to play tennis"
-        featureDescription="A mobile application that facilitates the use and sharing of tennis courts."
-        featureImg={courteImg}
-      />
-      <Project
-        featureLogo={picbeakLogo}
-        featureHeadline="Explore birds and 
+      <SectionWrapper>
+        <SectionTitle className="sectionTitle">Projects</SectionTitle>
+        <Project
+          featureLogo={courteLogo}
+          featureHeadline="Discover a better way to play tennis"
+          featureDescription="A mobile application that facilitates the use and sharing of tennis courts."
+          featureImg={courteImg}
+        />
+        <Project
+          featureLogo={picbeakLogo}
+          featureHeadline="Explore birds and 
         spot them in the wild"
-        featureDescription="Web app that provides educational information about bird species."
-        featureImg={picbeakImg}
-      />
+          featureDescription="Web app that provides educational information about bird species."
+          featureImg={picbeakImg}
+        />
+      </SectionWrapper>
     </Container>
   );
 };
 
 const Container = styled.div`
-  padding: 0;
+  padding: 0 2em;
   margin: 0;
   margin-top: 13.7vh;
   display: flex;
@@ -45,6 +47,12 @@ const Container = styled.div`
     margin-bottom: 2vh;
     text-align: left;
   }
+`;
+
+const SectionWrapper = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 `;
 
 export default ProjectsContainer;

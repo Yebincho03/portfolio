@@ -20,53 +20,65 @@ import {
 const Skill = () => {
   return (
     <Container>
-      <SectionTitle className="sectionTitle">Skills & Tools</SectionTitle>
-      <SkillWrapper>
-        <IconContainer>
-          <Image src={Html} width={50} height={50} />
-          <DescriptiveText>HTML</DescriptiveText>
-        </IconContainer>
+      <SectionWrapper>
+        <SectionTitle className="sectionTitle">Skills & Tools</SectionTitle>
+        <SkillWrapper>
+          <IconContainer>
+            <Image src={Html} width={50} height={50} />
+            <DescriptiveText>HTML</DescriptiveText>
+          </IconContainer>
 
-        <IconContainer>
-          <Image src={Css} width={50} height={50} />
-          <DescriptiveText>CSS</DescriptiveText>
-        </IconContainer>
+          <IconContainer>
+            <Image src={Css} width={50} height={50} />
+            <DescriptiveText>CSS</DescriptiveText>
+          </IconContainer>
 
-        <IconContainer>
-          <Image src={Sass} width={50} height={50} />
-          <DescriptiveText>sass</DescriptiveText>
-        </IconContainer>
+          <IconContainer>
+            <Image src={Sass} width={50} height={50} />
+            <DescriptiveText>sass</DescriptiveText>
+          </IconContainer>
 
-        <IconContainer>
-          <Image src={Javascript} width={50} height={50} />
-          <DescriptiveText>javascript</DescriptiveText>
-        </IconContainer>
+          <IconContainer>
+            <Image src={Javascript} width={50} height={50} />
+            <DescriptiveText>javascript</DescriptiveText>
+          </IconContainer>
 
-        <IconContainer>
-          <Image src={Jquery} width={50} height={50} />
-          <DescriptiveText>jquery</DescriptiveText>
-        </IconContainer>
+          <IconContainer>
+            <Image src={Jquery} width={50} height={50} />
+            <DescriptiveText>jquery</DescriptiveText>
+          </IconContainer>
 
-        <IconContainer>
-          <Image src={React} width={50} height={50} />
-          <DescriptiveText>react</DescriptiveText>
-        </IconContainer>
+          <IconContainer>
+            <Image src={React} width={50} height={50} />
+            <DescriptiveText>react</DescriptiveText>
+          </IconContainer>
 
-        <IconContainer>
-          <Image src={Git} width={50} height={50} />
-          <DescriptiveText>git</DescriptiveText>
-        </IconContainer>
+          <IconContainer>
+            <Image src={Git} width={50} height={50} />
+            <DescriptiveText>git</DescriptiveText>
+          </IconContainer>
 
-        <IconContainer>
-          <Image src={Firebase} width={50} height={50} />
-          <DescriptiveText>firebase</DescriptiveText>
-        </IconContainer>
+          <IconContainer>
+            <Image src={Firebase} width={50} height={50} />
+            <DescriptiveText>firebase</DescriptiveText>
+          </IconContainer>
 
-        <IconContainer>
-          <Image src={Expo} width={50} height={50} />
-          <DescriptiveText>expo go</DescriptiveText>
-        </IconContainer>
-      </SkillWrapper>
+          <IconContainer>
+            <Image src={Expo} width={50} height={50} />
+            <DescriptiveText>expo go</DescriptiveText>
+          </IconContainer>
+
+          <IconContainer>
+            <Image src={Expo} width={50} height={50} />
+            <DescriptiveText>expo go</DescriptiveText>
+          </IconContainer>
+
+          <IconContainer>
+            <Image src={Expo} width={50} height={50} />
+            <DescriptiveText>expo go</DescriptiveText>
+          </IconContainer>
+        </SkillWrapper>
+      </SectionWrapper>
     </Container>
   );
 };
@@ -74,23 +86,31 @@ const Skill = () => {
 const Container = styled.div`
   display: flex;
   flex-direction: column;
-  max-width: 900px;
-  text-align: left;
+  justify-content: center;
   padding: 1vh 2em;
+  align-items: center;
   margin: 20vh 0;
+`;
+
+const SectionWrapper = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 `;
 
 const SkillWrapper = styled.div`
   display: flex;
-  flex-direction: row;
   border: 1px solid ${globalColor.grey10};
   border-radius: 20px;
   padding: 2em;
+  align-items: center;
   gap: 2em;
   margin-top: 2vh;
+  flex-wrap: wrap;
 
   @media screen and (min-width: 800px) {
     padding: 3em;
+    max-width: 830px;
   }
 `;
 

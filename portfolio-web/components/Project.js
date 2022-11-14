@@ -42,7 +42,7 @@ const ProjectWrapper = styled.div`
   flex-direction: column;
   max-width: 900px;
   text-align: left;
-  padding: 1vh 2em;
+  padding: 1vh 0;
 `;
 
 const FeatureContainer = styled.div`
@@ -63,6 +63,7 @@ const ImageContainer = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+  max-width: 400px;
   @media screen and (min-width: 800px) {
     max-width: 400px;
   }
