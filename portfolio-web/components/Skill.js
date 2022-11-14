@@ -9,6 +9,7 @@ import Sass from "../public/icons/sass.svg";
 import React from "../public/icons/react.svg";
 import Git from "../public/icons/git.svg";
 import Firebase from "../public/icons/firebase.svg";
+import Expo from "../public/icons/expogo.svg";
 import {
   globalColor,
   SectionTitle,
@@ -59,6 +60,11 @@ const Skill = () => {
         <IconContainer>
           <Image src={Firebase} width={50} height={50} />
           <DescriptiveText>firebase</DescriptiveText>
+        </IconContainer>
+
+        <IconContainer>
+          <Image src={Expo} width={50} height={50} />
+          <DescriptiveText>expo go</DescriptiveText>
         </IconContainer>
       </SkillWrapper>
     </Container>
