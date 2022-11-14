@@ -28,7 +28,7 @@ const Project = (props) => {
           <featureLogo>
             <Image src={featureLogo} objectFit={"cover"} quality={100} />
           </featureLogo>
-          <HeadLine className="headLine">{featureHeadline}</HeadLine>
+          <h2 className="headLine">{featureHeadline}</h2>
           <DescriptiveText>{featureDescription}</DescriptiveText>
           <button className="btn">Learn more</button>
         </InfoContainer>
@@ -79,7 +79,7 @@ const InfoContainer = styled.div`
   }
 
   .headLine {
-    padding: 1vh 0;
+    margin: 2vh 0;
   }
 
   .btn {

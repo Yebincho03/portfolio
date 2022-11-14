@@ -14,21 +14,21 @@ export const SectionTitle = styled.h3`
   font-weight: 600;
   margin: 0;
   @media screen and (min-width: 800px) {
-    font-size: 40px;
+    font-size: 38px;
   }
 `;
 
 export const HeadLine = styled.h1`
-  font-size: 25px;
+  font-size: 30px;
   font-weight: 600;
   color: ${globalColor.grey0};
   line-height: 35px;
   margin: 0;
   @media screen and (min-width: 800px) {
-    font-size: 28px;
+    font-size: 38px;
     font-weight: 600;
     color: ${globalColor.grey0};
-    line-height: 35px;
+    line-height: 40px;
     margin: 0;
   }
 `;
