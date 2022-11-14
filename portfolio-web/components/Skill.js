@@ -10,6 +10,8 @@ import React from "../public/icons/react.svg";
 import Git from "../public/icons/git.svg";
 import Firebase from "../public/icons/firebase.svg";
 import Expo from "../public/icons/expogo.svg";
+import NativeBase from "../public/icons/nativeBase.svg";
+import Graphql from "../public/icons/apollo-graphQL.svg";
 import {
   globalColor,
   SectionTitle,
@@ -69,13 +71,13 @@ const Skill = () => {
           </IconContainer>
 
           <IconContainer>
-            <Image src={Expo} width={50} height={50} />
-            <DescriptiveText>expo go</DescriptiveText>
+            <Image src={NativeBase} width={50} height={50} />
+            <DescriptiveText>nativeBase</DescriptiveText>
           </IconContainer>
 
           <IconContainer>
-            <Image src={Expo} width={50} height={50} />
-            <DescriptiveText>expo go</DescriptiveText>
+            <Image src={Graphql} width={50} height={50} />
+            <DescriptiveText>graphql apollo</DescriptiveText>
           </IconContainer>
         </SkillWrapper>
       </SectionWrapper>
