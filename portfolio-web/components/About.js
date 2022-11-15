@@ -37,7 +37,7 @@ const Container = styled.div`
   max-width: 900px;
   justify-content: center;
   align-self: center;
-  margin: 20vh 0;
+  margin: 20vh 2em;
 
   .arrow {
     display: flex;
@@ -50,7 +50,6 @@ const Container = styled.div`
     flex-direction: column;
     justify-content: center;
     background-color: #000000;
-    width: 85vw;
     border-radius: 20px;
     padding: 5vh 5vw;
 
@@ -58,7 +57,7 @@ const Container = styled.div`
       display: flex;
       flex-direction: row;
       justify-content: center;
-      width: 100%;
+      margin: 0 2em;
     }
     .imgWrapper {
       width: 20vw;
