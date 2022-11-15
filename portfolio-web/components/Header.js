@@ -1,19 +1,18 @@
-import { react, useState } from "react";
 import Image from "next/image";
+import Link from "next/link";
 import styled from "styled-components";
 import Logo from "../public/logo/YC.logo.svg";
 import Github from "../public/logo/github.svg";
 import Linkedin from "../public/logo/linkedin-logo.svg";
-import hamburger from "../public/hamburger-menu.svg";
-import Link from "next/link";
 
 const Header = () => {
-  const [showMenu, setShowMenu] = useState(false);
-
   return (
     <HeaderContainer>
       <TextContainer>
-        <Image width={54} height={56} src={Logo} alt="Logo" />
+        <Link href="/">
+          <Image width={54} height={56} src={Logo} alt="Logo" />
+        </Link>
+
         <MenuItems>
           <Menu>
             <div className="contactMe">CONTACT ME</div>

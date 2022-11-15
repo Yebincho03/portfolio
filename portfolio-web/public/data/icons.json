@@ -1,0 +1,46 @@
+[
+  {
+    "link": "/icons/html5.svg",
+    "alt": "HTML"
+  },
+  {
+    "link": "/icons/css3.svg",
+    "alt": "CSS"
+  },
+  {
+    "link": "/icons/sass.svg",
+    "alt": "Sass"
+  },
+  {
+    "link": "/icons/javascript.svg",
+    "alt": "Javascript"
+  },
+  {
+    "link": "/icons/jquery.svg",
+    "alt": "Jquery"
+  },
+  {
+    "link": "/icons/react.svg",
+    "alt": "React"
+  },
+  {
+    "link": "/icons/git.svg",
+    "alt": "git"
+  },
+  {
+    "link": "/icons/firebase.svg",
+    "alt": "Firebase"
+  },
+  {
+    "link": "/icons/expogo.svg",
+    "alt": "Expo"
+  },
+  {
+    "link": "/icons/nativeBase.svg",
+    "alt": "NativeBase"
+  },
+  {
+    "link": "/icons/apollo-graphQL.svg",
+    "alt": "GraphQL Apollo"
+  }
+]
