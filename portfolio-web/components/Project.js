@@ -1,11 +1,5 @@
-import react from "react";
 import Image from "next/image";
-import {
-  globalColor,
-  SectionTitle,
-  DescriptiveText,
-  HeadLine,
-} from "../shared/Style";
+import { globalColor, DescriptiveText } from "../shared/Style";
 import styled from "styled-components";
 
 const Project = (props) => {

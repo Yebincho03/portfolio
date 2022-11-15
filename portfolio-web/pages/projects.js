@@ -3,11 +3,13 @@ import { globalColor, SectionTitle, DescriptiveText } from "../shared/Style";
 import styled from "styled-components";
 import Image from "next/image";
 import Header from "../components/Header";
+import DetailContainer from "../components/projectDetail/DetailContainer";
 
 function Project() {
   return (
     <Container>
       <Header />
+      <DetailContainer />
     </Container>
   );
 }

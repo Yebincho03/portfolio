@@ -20,8 +20,7 @@ const ProjectsContainer = () => {
         />
         <Project
           featureLogo={picbeakLogo}
-          featureHeadline="Explore birds and 
-        spot them in the wild"
+          featureHeadline="Explore birds and spot them in the wild"
           featureDescription="Web app that provides educational information about bird species."
           featureImg={picbeakImg}
         />
