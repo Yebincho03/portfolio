@@ -62,7 +62,7 @@ const HeroWrapper = styled.div`
     .helloText {
       font-style: normal;
       font-weight: 300;
-      font-size: 24px;
+      font-size: 20px;
       line-height: 40px;
     }
 

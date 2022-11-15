@@ -4,12 +4,8 @@ import courteLogo from "../public/logo/courte-logo.svg";
 import courteImg from "../public/images/courte-image.png";
 import picbeakLogo from "../public/logo/picbeak-logo.svg";
 import picbeakImg from "../public/images/picbeak-image.png";
-import {
-  globalColor,
-  SectionTitle,
-  DescriptiveText,
-  HeadLine,
-} from "../shared/Style";
+import { globalColor, SectionTitle } from "../shared/Style";
+import Link from "next/link";
 
 const ProjectsContainer = () => {
   return (
@@ -30,6 +26,7 @@ const ProjectsContainer = () => {
           featureImg={picbeakImg}
         />
       </SectionWrapper>
+      <Link href="/projects">See more projects</Link>
     </Container>
   );
 };
@@ -47,12 +44,23 @@ const Container = styled.div`
     margin-bottom: 2vh;
     text-align: left;
   }
+  .moreBtn {
+    width: 150px;
+    height: 45px;
+    border: none;
+    background-color: transparent;
+    color: ${globalColor.grey10};
+    font-size: 15px;
+    line-height: 10px;
+    margin-top: 2em;
+  }
 `;
 
 const SectionWrapper = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
+  margin-bottom: 1em;
 `;
 
 export default ProjectsContainer;

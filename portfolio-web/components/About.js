@@ -61,6 +61,7 @@ const Container = styled.div`
     }
     .imgWrapper {
       width: 20vw;
+      align-self: center;
       .icon {
         width: 50px;
         height: auto;
@@ -73,9 +74,11 @@ const Container = styled.div`
       display: flex;
       justify-content: center;
       align-self: center;
+      text-align: center;
 
       @media screen and (min-width: 800px) {
         width: 45vw;
+        text-align: left;
       }
 
       .sectionTitle {
