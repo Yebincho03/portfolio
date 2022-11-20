@@ -3,7 +3,7 @@ import { globalColor, DescriptiveText } from "../shared/Style";
 import styled from "styled-components";
 
 const Project = (props) => {
-  const { featureLogo, featureHeadline, featureDescription, featureImg } =
+  const { featureLogo, featureHeadline, featureDescription, featureImg, tech } =
     props;
 
   return (
@@ -19,12 +19,12 @@ const Project = (props) => {
           />
         </ImageContainer>
         <InfoContainer>
-          <featureLogo>
+          <div className="featureLogo">
             <Image src={featureLogo} objectFit={"cover"} quality={100} />
-          </featureLogo>
+          </div>
           <h2 className="headLine">{featureHeadline}</h2>
           <DescriptiveText>{featureDescription}</DescriptiveText>
-          <button className="btn">Learn more</button>
+          <DescriptiveText className="tech">{tech}</DescriptiveText>
         </InfoContainer>
       </FeatureContainer>
     </ProjectWrapper>
@@ -73,20 +73,20 @@ const InfoContainer = styled.div`
     max-width: 300px;
   }
 
+  .featureLogo {
+    width: 130px;
+    height: 25px;
+    margin: 0;
+    justify-content: center;
+  }
   .headLine {
     margin: 2vh 0;
   }
 
-  .btn {
-    width: 150px;
-    height: 45px;
-    border-radius: 10px;
-    background-color: transparent;
-    border: 1px solid ${globalColor.grey10};
+  .tech {
+    padding-top: 30px;
+    font-weight: 300;
     color: ${globalColor.grey10};
-    font-size: 15px;
-    line-height: 10px;
-    margin-top: 2em;
   }
 `;
 

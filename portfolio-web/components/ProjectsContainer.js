@@ -17,15 +17,19 @@ const ProjectsContainer = () => {
           featureHeadline="Discover a better way to play tennis"
           featureDescription="A mobile application that facilitates the use and sharing of tennis courts."
           featureImg={courteImg}
+          tech="Tech : React Native, JavaScript, Expo, Firebase Authentication, Google Auth, GraphQL"
         />
         <Project
           featureLogo={picbeakLogo}
           featureHeadline="Explore birds and spot them in the wild"
           featureDescription="Web app that provides educational information about bird species."
           featureImg={picbeakImg}
+          tech="Tech : React.js, JavaScript, REST APIs, Express.js, Mongoose, Node.js, MongoDB Atlas, Sass, Git, Heroku"
         />
       </SectionWrapper>
-      <Link href="/projects">See more projects</Link>
+      <button className="moreProjectBtn">
+        <Link href="/projects">See more projects</Link>
+      </button>
     </Container>
   );
 };
@@ -43,15 +47,21 @@ const Container = styled.div`
     margin-bottom: 2vh;
     text-align: left;
   }
-  .moreBtn {
-    width: 150px;
+  .moreProjectBtn {
+    cursor: pointer;
+    width: 200px;
     height: 45px;
-    border: none;
+    border: 1px solid ${globalColor.primary};
+    border-radius: 10px;
     background-color: transparent;
-    color: ${globalColor.grey10};
+    color: ${globalColor.primary};
     font-size: 15px;
     line-height: 10px;
     margin-top: 2em;
+    :hover {
+      background-color: ${globalColor.primary};
+      color: ${globalColor.grey100};
+    }
   }
 `;
 

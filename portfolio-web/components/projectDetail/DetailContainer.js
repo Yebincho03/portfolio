@@ -6,7 +6,7 @@ import ProjectDetail from "./ProjectDetail";
 const DetailContainer = () => {
   return (
     <>
-      <ProjectDetail />
+      <ProjectDetail projectTitle="Courte" />
     </>
   );
 };

@@ -3,6 +3,7 @@ import Image from "next/image";
 import styled from "styled-components";
 import { globalColor, HeadLine, DescriptiveText } from "../shared/Style";
 import HeroImg from "../public/images/myPic.png";
+import Link from "next/link";
 
 const Hero = () => {
   return (
@@ -17,9 +18,9 @@ const Hero = () => {
           Vancouver.
         </DescriptiveText>
         <ButtonWrapper>
-          <button className="btn">
-            <h3>HIRE ME</h3>
-          </button>
+          <Link href="/resume">
+            <button className="btn">HIRE ME</button>
+          </Link>
         </ButtonWrapper>
       </div>
       <div className="imgWrapper">
@@ -144,14 +145,21 @@ const ButtonWrapper = styled.div`
   flex-direction: row;
   margin: 20px 0;
   .btn {
+    cursor: pointer;
     width: 180px;
+    height: 50px;
     border-radius: 10px;
     background-color: transparent;
     border: 2px solid ${globalColor.primary};
     color: ${globalColor.primary};
     font-size: 15px;
+    font-weight: 600;
     line-height: 10px;
     margin: 0;
+    :hover {
+      background-color: ${globalColor.primary};
+      color: ${globalColor.grey100};
+    }
   }
 `;
 

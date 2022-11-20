@@ -15,7 +15,9 @@ const ProjectDetail = (props) => {
   return (
     <Container>
       <ProjectWrapper>
-        <SectionContainer></SectionContainer>
+        <SectionContainer>
+          <h1>{projectTitle}</h1>
+        </SectionContainer>
       </ProjectWrapper>
     </Container>
   );
