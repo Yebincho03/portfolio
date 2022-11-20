@@ -52,6 +52,7 @@ const TextContainer = styled.div`
   max-width: 900px;
   justify-content: space-between;
   align-items: center;
+  cursor: pointer;
 `;
 
 const Menu = styled.div`
