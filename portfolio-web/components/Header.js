@@ -64,6 +64,7 @@ const Menu = styled.div`
     margin: 0 10px;
     font-size: 20px;
     font-weight: 500;
+    cursor: default;
   }
 `;
 const MenuItems = styled.div`
