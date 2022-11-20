@@ -33,6 +33,21 @@ export const HeadLine = styled.h1`
   }
 `;
 
+export const ProjectText = styled.h3`
+  font-size: 18px;
+  font-weight: 500;
+  color: ${globalColor.grey0};
+  line-height: 25px;
+  margin: 0;
+  @media screen and (min-width: 800px) {
+    font-size: 20px;
+    font-weight: 500;
+    color: ${globalColor.grey0};
+    line-height: 40px;
+    margin: 0;
+  }
+`;
+
 export const DescriptiveText = styled.p`
   font-style: normal;
   font-weight: 200;
