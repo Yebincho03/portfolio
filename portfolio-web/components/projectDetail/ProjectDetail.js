@@ -13,10 +13,9 @@ const ProjectDetail = (props) => {
     projectTitle,
     projectHeadline,
     projectImage,
-    role,
     tech,
     projectDescription,
-    projectImg,
+    team,
     link,
   } = props;
 
@@ -40,7 +39,11 @@ const ProjectDetail = (props) => {
             </div>
             <div className="wrapper">
               <ProjectText>About the project</ProjectText>
-              <DescriptiveText>{projectDescription}</DescriptiveText>
+              <DescriptiveText>
+                {projectDescription}
+                <p>{team}</p>
+              </DescriptiveText>
+              <h5>Tech : {tech}</h5>
             </div>
           </InfoContainer>
           <ImageContainer>
@@ -79,10 +82,10 @@ const SectionContainer = styled.div`
   flex-direction: column;
   border-bottom: 1px solid ${globalColor.grey10};
   padding: 2em;
-  gap: 2em;
+  gap: 3em;
 
   @media screen and (min-width: 800px) {
-    padding: 3em;
+    padding: 3em 0;
     flex-direction: row;
   }
 `;
@@ -120,7 +123,7 @@ const ImageContainer = styled.div`
   justify-content: center;
 
   @media screen and (min-width: 800px) {
-    width: 400px;
+    width: 500px;
   }
 `;
 
