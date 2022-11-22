@@ -60,7 +60,11 @@ const Menu = styled.div`
   margin: 0 5px;
 
   .contactMe {
-    opacity: 0;
+    line-height: 40px;
+    margin: 0 10px;
+    font-size: 10px;
+    font-weight: 500;
+    cursor: default;
 
     @media screen and (min-width: 800px) {
       line-height: 40px;
@@ -68,7 +72,6 @@ const Menu = styled.div`
       font-size: 20px;
       font-weight: 500;
       cursor: default;
-      opacity: 1;
     }
   }
 `;
