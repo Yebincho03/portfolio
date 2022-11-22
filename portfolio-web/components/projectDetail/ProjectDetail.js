@@ -30,7 +30,13 @@ const ProjectDetail = (props) => {
               </ProjectText>
 
               <Link href={link}>
-                <Image className="link" src={GitLogo} width={40} height={40} />
+                <Image
+                  className="link"
+                  src={GitLogo}
+                  width={40}
+                  height={40}
+                  alt="Link"
+                />
               </Link>
             </div>
             <div className="wrapper">
