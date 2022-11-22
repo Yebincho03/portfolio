@@ -87,7 +87,7 @@ const SectionContainer = styled.div`
   display: flex;
   flex-direction: column;
   border-bottom: 1px solid ${globalColor.grey10};
-  padding: 3em 2em;
+  padding: 4em 2em;
   gap: 3em;
 
   @media screen and (min-width: 800px) {
