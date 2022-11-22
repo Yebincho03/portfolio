@@ -37,7 +37,7 @@ export const ProjectText = styled.h3`
   font-size: 18px;
   font-weight: 500;
   color: ${globalColor.grey0};
-  line-height: 25px;
+  line-height: 40px;
   margin: 0;
   @media screen and (min-width: 800px) {
     font-size: 20px;
