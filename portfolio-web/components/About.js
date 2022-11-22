@@ -9,7 +9,7 @@ const About = () => {
   return (
     <Container>
       <div className="arrow">
-        <Image src={Arrow} />
+        <Image src={Arrow} alt="arrow" />
       </div>
       <div className="blackBox">
         <div className="imgWrapper">

@@ -20,7 +20,12 @@ const Project = (props) => {
         </ImageContainer>
         <InfoContainer>
           <div className="featureLogo">
-            <Image src={featureLogo} objectFit={"cover"} quality={100} />
+            <Image
+              src={featureLogo}
+              objectFit={"cover"}
+              quality={100}
+              alt="featureLogo"
+            />
           </div>
           <h2 className="headLine">{featureHeadline}</h2>
           <DescriptiveText>{featureDescription}</DescriptiveText>

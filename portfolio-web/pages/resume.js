@@ -16,6 +16,7 @@ function Resume() {
           quality={100}
           width={1000}
           height={1400}
+          alt="resume"
         />
       </ImageContainer>
     </Container>

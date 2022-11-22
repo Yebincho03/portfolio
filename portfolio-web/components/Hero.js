@@ -10,12 +10,12 @@ const Hero = () => {
     <HeroWrapper>
       <div className="textWrapper">
         <div className="helloText">HI THERE👋</div>
-        <HeadLine>I'm Yebin,</HeadLine>
+        <HeadLine>I&apos;m Yebin,</HeadLine>
         <HeadLine>Front-end developer</HeadLine>
         <h4>DESIGNER + DEVELOPER</h4>
         <DescriptiveText className="descriptiveText">
-          I’m a junior frontend developer with graphic design skills based in
-          Vancouver.
+          I&apos;m a junior frontend developer with graphic design skills based
+          in Vancouver.
         </DescriptiveText>
         <ButtonWrapper>
           <Link href="/resume">
