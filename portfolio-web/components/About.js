@@ -21,7 +21,7 @@ const About = () => {
             I’m a <b>Frontend Developer</b> with a background in graphic design.
             Recently, I graduated from
             <b> Langara College Web and Mobile development.</b> I am passionate
-            about solvoing problems through code and creating interactive
+            about solving problems through code and creating interactive
             applications and experiences on the web. I am excited to work
             alongside other amazing programmers and learn so much more!
           </DescriptiveText>
