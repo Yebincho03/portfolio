@@ -101,7 +101,7 @@ const InfoContainer = styled.div`
   flex-direction: column;
 
   @media screen and (min-width: 800px) {
-    width: 700px;
+    width: 40vw;
   }
 
   .projectTitle {
@@ -129,7 +129,7 @@ const ImageContainer = styled.div`
   justify-content: center;
 
   @media screen and (min-width: 800px) {
-    width: 500px;
+    width: 30vw;
   }
 `;
 
